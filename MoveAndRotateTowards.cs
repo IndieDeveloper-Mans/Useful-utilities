@@ -52,8 +52,7 @@ public class MoveAndRotateTowards
     public bool RotateTowards(Transform from, Transform target, float rotationSpeed, bool rotateXAngle = false)
     {
         Vector3 direction = (new Vector3(target.position.x, 0, target.position.z) - new Vector3(from.position.x, 0, from.position.z)).normalized;
-
-        // не работает переопределение на 0, что весьма и весьма странно
+        
         //here we can check by bool, if we need to use "x" of rotation || for future, maybe ?
         //if (!rotateXAngle)
         //{
